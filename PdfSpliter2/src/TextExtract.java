@@ -23,8 +23,8 @@ public class TextExtract {
     }
 
 	public static void main(String[] args) throws FileNotFoundException {
-		PDFInvoice pdfInvoice = new PDFInvoice("H:\\Java\\Einzelrechu\\testXD.PDF");
+		PDFInvoice pdfInvoice = new PDFInvoice("H:\\Java\\Einzelrechu\\testXD2.PDF");
 		
-		System.out.println(TextExtract.getText(pdfInvoice, 1, 15));
+		System.out.println(TextExtract.getText(pdfInvoice, 21, 32));
 	}
 }

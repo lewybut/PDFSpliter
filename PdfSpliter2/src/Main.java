@@ -23,6 +23,7 @@ public class Main {
 		file = new File("H:\\Java\\test\\exceptionValues");
 		file.mkdirs();
 		for (Invoice invoice : invoices) {
+			invoice.getFileName();
 //				System.out.println("Invoice");
 //				System.out.println("---");
 //				System.out.println(invoice.getStartPage());
@@ -31,18 +32,18 @@ public class Main {
 //				System.out.println(invoice.getInvoiceNumber());
 //				System.out.println(invoice.getInvoiceDate());
 			
-				if(invoice.getClientNumber() != null) {
-				file = new File("H:\\Java\\test\\" + invoice.getClientNumber());
-				file.mkdir();
-				//System.out.println("H:\\Java\\test\\" + invoice.getFileName());
-				Spliter.processPDFFile(fileName, invoice.getStartPage(), 
-						invoice.getEndPage(), "H:\\Java\\test\\" + invoice.getFileName());
-				}
-				else {
-					//System.out.println("Error: " + "H:\\Java\\test\\exceptionValues\\" + invoice.getStartPage() + ".PDF");
-					Spliter.processPDFFile(fileName, invoice.getStartPage(), 
-							invoice.getEndPage(), "H:\\Java\\test\\exceptionValues\\" + invoice.getStartPage() + ".PDF");
-				}
+//				if(invoice.getClientNumber() != null) {
+//				file = new File("H:\\Java\\test\\" + invoice.getClientNumber());
+//				file.mkdir();
+//				System.out.println("H:\\Java\\test\\" + invoice.getFileName());
+//				Spliter.processPDFFile(fileName, invoice.getStartPage(), 
+//						invoice.getEndPage(), "H:\\Java\\test\\" + invoice.getFileName());
+//				}
+//				else {
+//					//System.out.println("Error: " + "H:\\Java\\test\\exceptionValues\\" + invoice.getStartPage() + ".PDF");
+//					Spliter.processPDFFile(fileName, invoice.getStartPage(), 
+//							invoice.getEndPage(), "H:\\Java\\test\\exceptionValues\\" + invoice.getStartPage() + ".PDF");
+//				}
 		}
 	}
 	

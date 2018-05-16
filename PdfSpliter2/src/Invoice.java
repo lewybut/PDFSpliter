@@ -66,7 +66,12 @@ public class Invoice {
 	}
 	
 	public String getFileName() {
-		return "\\" + clientNumber + "\\" + clientNumber + "_" + invoiceNumber + "_"
-				+ invoiceDate.replace(".", "").replace("/", "") + ".PDF";
+		try {
+			return "\\" + clientNumber + "\\" + clientNumber + "_" + invoiceNumber + "_"
+					+ invoiceDate.replace(".", "").replace("/", "") + ".PDF";
+		} catch (Exception e) {
+			System.out.println(this.getClientNumber() + " " + this.getStartPage() + " ");
+		}
+		return "ERROR";
 	}
 }
