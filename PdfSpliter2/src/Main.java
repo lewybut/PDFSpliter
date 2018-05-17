@@ -3,15 +3,15 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class Main {
-	private static String fileName = "H:\\Java\\test01.PDF";
-	//private static String fileName = "H:\\Java\\Einzelrechu\\testXD2.PDF";
+	//private static String fileName = "H:\\Java\\test01.PDF";
+	private static String fileName = "H:\\Java\\Einzelrechu\\testXD2.PDF";
 	//private static PDFInvoice pdfInvoice = new PDFInvoice("H:\\Java\\Einzelrechu\\testXD.PDF");
 	private static PDFInvoice pdfInvoice = new PDFInvoice(fileName);
 	private static ArrayList<Invoice> invoices = new ArrayList<Invoice>();
 	private static InvoiceHandler singleInvoice;
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		singleInvoice = new InvoiceHandlerSummary();
+		singleInvoice = new InvoiceHandlerSingle();
 		File file;
 		try {
 			//invoices = InvoiceHandler.getInvoicesArrayList(pdfInvoice);
@@ -31,7 +31,7 @@ public class Main {
 //				System.out.println(invoice.getClientNumber());
 //				System.out.println(invoice.getInvoiceNumber());
 //				System.out.println(invoice.getInvoiceDate());
-			
+				System.out.println("Damian, Damian, co z Ciebie wyrosnie");
 				if(invoice.getClientNumber() != null && invoice.getInvoiceNumber() != null && invoice.getInvoiceDate() != null) {
 				file = new File("H:\\Java\\test\\" + invoice.getClientNumber());
 				file.mkdir();

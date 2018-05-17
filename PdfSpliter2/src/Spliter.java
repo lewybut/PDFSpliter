@@ -39,8 +39,9 @@ public class Spliter {
 
             System.out.println("Done");
         } catch (Exception e) {
+        	System.out.println("Zonk!");
             System.out.print(e);
             System.exit(-1);
-        }
+       }
     }
 }
