@@ -1,7 +1,7 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class InvoiceHanlderSummary extends InvoiceHandler  {
+public class InvoiceHandlerSummary extends InvoiceHandler  {
 
 	@Override
 	String[] regexPattern() {
