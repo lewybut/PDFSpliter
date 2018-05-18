@@ -7,3 +7,6 @@
 /PDFInvoice.class
 /Spliter.class
 /TextExtract.class
+/MakeTxtFile.class
+/GetCsvValues.class
+/FilesHandler.class

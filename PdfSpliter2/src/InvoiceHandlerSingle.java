@@ -4,8 +4,9 @@ import java.util.regex.Pattern;
 public class InvoiceHandlerSingle extends InvoiceHandler {
 	
 	String[] regexPattern() {
-		return new String[] {"DE(\\w|\\d){1}\\d{5}\\s+", "Rechnungs-Nr.\\s+(\\d){8}", 
-				"(DE\\w{9}\\s+\\d{2}\\-\\d{2}\\-\\d{2}\\s+)|(DE\\w{11}\\s+\\d{2}\\-\\d{2}\\-\\d{2}\\s+)"};
+//		return new String[] {"DE(\\w|\\d){1}\\d{5}\\s+", "Rechnungs-Nr.\\s+(\\d){8}", 
+//				"(DE\\w{9}\\s+\\d{2}\\-\\d{2}\\-\\d{2}\\s+)|(DE\\w{11}\\s+\\d{2}\\-\\d{2}\\-\\d{2}\\s+)"};
+		return FilesHandler.readCSV("H:\\Java\\database\\regexTest.csv");
 	}
 	
 	@Override
