@@ -8,7 +8,7 @@ public abstract class InvoiceHandler {
 	abstract String[] regexPattern();
 	
 	public ArrayList<Invoice> getInvoicesArrayList(PDFInvoice pdfInvoice) throws Exception{
-		System.out.println("getInvoicesArrayList called");
+		//System.out.println("getInvoicesArrayList called");
 		ArrayList<Invoice> invoices = new ArrayList<>();
 		ArrayList<Integer> lastPages = new ArrayList<>();
 		lastPages = (getInvoiceLength(pdfInvoice));

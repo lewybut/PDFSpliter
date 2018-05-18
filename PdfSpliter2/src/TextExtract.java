@@ -24,7 +24,7 @@ public class TextExtract {
 
 	//test main to extract text values
 	public static void main(String[] args) throws FileNotFoundException {
-		PDFInvoice pdfInvoice = new PDFInvoice("H:\\Java\\Einzelrechu\\testXD2.PDF");		
-		System.out.println(TextExtract.getText(pdfInvoice, 21, 32));
+		PDFInvoice pdfInvoice = new PDFInvoice("C:\\Users\\u4012273\\Desktop\\FE 13 03 18 F053 BACKUP.pdf");		
+		System.out.println(TextExtract.getText(pdfInvoice, 1, 1));
 	}
 }
