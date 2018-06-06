@@ -1,12 +1,3 @@
-/InvoiceHandlerContract.class
-/Invoice.class
-/InvoiceHandler.class
-/InvoiceHandlerSingle.class
-/InvoiceHandlerSummary.class
-/Main.class
-/PDFInvoice.class
-/Spliter.class
-/TextExtract.class
-/MakeTxtFile.class
-/GetCsvValues.class
-/FilesHandler.class
+/PathAssignerSingle.class
+/CSVWriter.class
+/PathAssignSummary.class

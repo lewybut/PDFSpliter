@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public abstract class InvoiceHandler {
+public abstract class InvoiceHandler implements Runnable{
 	
 	abstract String[] regexPattern();
 	
@@ -75,6 +75,11 @@ public abstract class InvoiceHandler {
 				firstPage+=length;
 		}	
 		return invoices;
+	}
+	
+	public void run() {
+		// TODO Auto-generated method stub
+		
 	}
 		
 }

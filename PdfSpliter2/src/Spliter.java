@@ -1,6 +1,7 @@
 
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 import org.apache.pdfbox.multipdf.Splitter;
@@ -15,14 +16,11 @@ public class Spliter {
         info.setProducer("ACME PDF Splitter v1.1");
 
         File file = new File(inputFileName);
-
-        System.out.println("Processing file: " + inputFileName);
+        PDDocument document = new PDDocument();
         try {
             PDDocument mergedDoc = new PDDocument();
             mergedDoc.setDocumentInformation(info);
-            PDDocument document = new PDDocument();
             document = PDDocument.load(file);
-
             Splitter splitter = new Splitter();
             splitter.setStartPage(startPage);
             splitter.setEndPage(endPage);
@@ -37,11 +35,13 @@ public class Spliter {
             mergedDoc.close();
             document.close();
 
-            System.out.println("Done");
         } catch (Exception e) {
-        	System.out.println("Zonk!");
+        	System.out.println("Zonk! PDF SPLITER");
             System.out.print(e);
             System.exit(-1);
+       }	finally {
+    	   
        }
+
     }
 }
